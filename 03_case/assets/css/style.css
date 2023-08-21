@@ -1,7 +1,7 @@
 main{
     position: fixed;
     width: 200px;
-    height: 200px;
+    aspect-ratio: 1/1;
     /*background: black;*/
 
     border: 10px solid gray;
@@ -19,7 +19,7 @@ main{
 main>div{
     position: absolute;
     width: calc(100% - 20px);
-    height: calc(100% - 20px);
+   aspect-ratio: 1/1;
     /*background: black;*/
 
     border: 10px solid red;
@@ -34,18 +34,6 @@ main>div{
 }
 
 section{
-    /*position: absolute;*/
-    /*width: fit-content;*/
-    /*padding-bottom: 20vw;*/
-    /*!*height: fit-content;*!*/
-
-
-    /*left: 0;*/
-    /*!*top: 17vw;*!*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*margin: auto;*/
 
     position: absolute;
     width: fit-content;
@@ -93,10 +81,12 @@ section>div:nth-child(3){
     margin-bottom: 221px;
 
 }
-
-section>div:first-child>span{
+section>div>span{
     position: absolute;
     color: white;
+
+    width: fit-content;
+    height: fit-content;
 
     left: 0;
     top: 0;
@@ -104,40 +94,7 @@ section>div:first-child>span{
     bottom: 0;
     margin: auto;
 
-    width: fit-content;
-    height: fit-content;
-
-}
-
-section>div:nth-child(2)>span{
-
-    position: absolute;
-    color: white;
-
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-
-    width: fit-content;
-    height: fit-content;
-
-}
-section>div:nth-child(3)>span{
-
-    position: absolute;
-    color: white;
-
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-
-    width: fit-content;
-    height: fit-content;
     text-align: center ;
 
-}
 
+}

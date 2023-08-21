@@ -1,107 +1,71 @@
 
-body{
-    overflow-x: hidden;
-}
+/*section{*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*}*/
 
-
-nav {
-    position: relative;
-    width: 100vw;
-    height: 10vh;
-    /*background-color: pink;*/
-
-}
-
-/*logo*/
-nav > div:first-child {
-    position: absolute;
-    width: 12vw;
-    height: 8vh;
-    /*background-color: black;*/
-    top: 1vh;
-    left: 1vw;
-
-}
-
-nav > div:first-child > img {
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-/*navbar option*/
-nav > div:nth-child(2) {
-    position: absolute;
-    /*background-color: lightblue;*/
+.ch{
+    position: sticky;
     top: 0;
-    right: 1vw;
-
+    z-index: 500;
 }
 
-nav > div:nth-child(2) > ol > li {
-    display: inline-block;
-    margin-right: 1vh;
-
-
+section>div:first-child{
+    /*position: relative;*/
+    /*width: 100vw;*/
+    height: 50px;
+    color: black;
 }
 
-/*side bar*/
-section {
-    position: relative;
-    display: flex;
-
-}
-
-section > main:first-child {
-    padding-top: 4vh;
-    width: 15vw;
-    background-color: blueviolet;
-
-}
-
-section > main:first-child > ol > li {
-    display: block;
-    margin-top: 2vh;
-    color: white;
-}
-
-/*content*/
-section > main:nth-child(2) {
-    border-top: 3px solid black;
-    width: 83vw;
-    /*background-color: #1c1cd5;*/
-    padding: 1vw;
-
-
-}
-
-section > main:nth-child(2) > div {
-    width: 83vw;
-    height: 50vh;
-    /*background-color: #ee4141;*/
-    display: flex;
-
-
-}
-
-section > main:nth-child(2) > div > img {
-    max-height: 100%;
-    max-width: 100%;
-    border: 1px solid black;
-
-}
-
-body > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: gray;
-    height: 3vw;
-}
-body > div > h3{
-    font-size: 15px;
-    color: white;
+section>div:first-child>span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    /*background: lightcoral;*/
     margin: auto;
 }
 
+section>div:nth-child(2){
+    position: relative;
+    height: calc(100vh - 50px);
+}
+section>div:nth-child(2)>span{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 100px;
+}
+
+section>div:first-child{
+    background: #ff253a;
+}
+
+
+section:nth-child(2)>div:first-child{
+    background: blue;
+}
+section:nth-child(2)>div:nth-child(2){
+    background: lightskyblue;
+}
+
+section:nth-child(3)>div:first-child{
+    background: #fafa3e;
+}
+section:nth-child(3)>div:nth-child(2){
+    background: #e3fc76;
+}
+
+
+
+section:nth-child(4)>div:first-child{
+    background: #fa7bf3;
+}
+section:nth-child(4)>div:nth-child(2){
+    background: #f5e9ed;
+}

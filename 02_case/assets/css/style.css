@@ -1,0 +1,107 @@
+
+body{
+    overflow-x: hidden;
+}
+
+
+nav {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    /*background-color: pink;*/
+
+}
+
+/*logo*/
+nav > div:first-child {
+    position: absolute;
+    width: 12vw;
+    height: 8vh;
+    /*background-color: black;*/
+    top: 1vh;
+    left: 1vw;
+
+}
+
+nav > div:first-child > img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+/*navbar option*/
+nav > div:nth-child(2) {
+    position: absolute;
+    /*background-color: lightblue;*/
+    top: 0;
+    right: 1vw;
+
+}
+
+nav > div:nth-child(2) > ol > li {
+    display: inline-block;
+    margin-right: 1vh;
+
+
+}
+
+/*side bar*/
+section {
+    position: relative;
+    display: flex;
+
+}
+
+section > main:first-child {
+    padding-top: 4vh;
+    width: 15vw;
+    background-color: blueviolet;
+
+}
+
+section > main:first-child > ol > li {
+    display: block;
+    margin-top: 2vh;
+    color: white;
+}
+
+/*content*/
+section > main:nth-child(2) {
+    border-top: 3px solid black;
+    width: 83vw;
+    /*background-color: #1c1cd5;*/
+    padding: 1vw;
+
+
+}
+
+section > main:nth-child(2) > div {
+    width: 83vw;
+    height: 50vh;
+    /*background-color: #ee4141;*/
+    display: flex;
+
+
+}
+
+section > main:nth-child(2) > div > img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+
+}
+
+body > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: gray;
+    height: 3vw;
+}
+body > div > h3{
+    font-size: 15px;
+    color: white;
+    margin: auto;
+}
+

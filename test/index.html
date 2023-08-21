@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="nomalize.css">
+
+    <style>
+        div{
+
+        }
+
+        body>div:first-child{
+            width: calc(15vw - 3px);
+            aspect-ratio: 1/1;
+
+            border: rgba(107, 76, 76, 0.73) solid 10px;
+            position: fixed;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            border-radius: 100%;
+
+            z-index: 10;
+
+        }
+
+        body>div:nth-child(2){
+
+            width: 15vw;
+            height: 15vw;
+
+            border: red solid 10px;
+            position: fixed;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            z-index: 10;
+
+            border-radius: 100%;
+
+            box-sizing: border-box;
+
+        }
+
+        body>div:nth-child(3){
+
+            width: calc(15vw - 20px);
+            aspect-ratio: 1/1;
+
+
+            background: #a614a6;
+            position: relative;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            border-radius: 100%;
+
+            box-sizing: border-box;
+
+
+            margin-top: calc(35vh + 1px);
+            margin-bottom: 18vw;
+
+        }
+
+        body>div:nth-child(4){
+
+            width: calc(15vw - 20px);
+            aspect-ratio: 1/1;
+
+
+            background: deepskyblue;
+            position: relative;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            border-radius: 100%;
+
+            box-sizing: border-box;
+
+            margin-top: 20vw;
+            margin-bottom: 20vh;
+
+        }
+
+        body>div:nth-child(5){
+
+            width: calc(15vw - 20px);
+            aspect-ratio: 1/1;
+
+
+            background: tomato;
+            position: relative;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            border-radius: 100%;
+
+            box-sizing: border-box;
+
+            margin-bottom: calc(35vh + 1px);
+            margin-top: 18vw;
+        }
+
+
+        body>div:nth-child(3)>span{
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            left: 5vw;
+            bottom: 0;
+            margin: auto;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        body>div:nth-child(4)>span{
+            height: fit-content;
+            position: absolute;
+            top: 0vw;
+            left: calc(3vw + 3px);
+            bottom: 0;
+            margin: auto;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        body>div:nth-child(5)>span{
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            text-align: center ;
+
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+<div></div>
+<div></div>
+<div><span>Hello</span></div>
+<div><span>Welcome To </span></div>
+<div><span>Insitute  of  Software Engineering</span></div>
+
+
+</body>
+</html>

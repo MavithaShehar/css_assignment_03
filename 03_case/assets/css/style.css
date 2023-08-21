@@ -1,0 +1,143 @@
+main{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    /*background: black;*/
+
+    border: 10px solid gray;
+    border-radius: 100%;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    z-index: 100;
+
+}
+main>div{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    /*background: black;*/
+
+    border: 10px solid red;
+    border-radius: 100%;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+section{
+    /*position: absolute;*/
+    /*width: fit-content;*/
+    /*padding-bottom: 20vw;*/
+    /*!*height: fit-content;*!*/
+
+
+    /*left: 0;*/
+    /*!*top: 17vw;*!*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+
+    position: absolute;
+    width: fit-content;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    width: fit-content;
+    height: fit-content;
+
+
+}
+
+section>div{
+
+    width: 180px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+
+    margin: 239px 0px;
+    position: relative;
+
+}
+
+section>div:first-child{
+    background: purple;
+    margin-top: 222px;
+    margin-bottom: 0;
+    /*margin-bottom: 180px;*/
+
+}
+section>div:nth-child(2){
+    position: absolute;
+    background:dodgerblue;
+    margin-top: 313px;
+    margin-bottom: 0;
+
+
+
+}
+section>div:nth-child(3){
+
+    background: tomato;
+    margin-top: 833px;
+    margin-bottom: 221px;
+
+}
+
+section>div:first-child>span{
+    position: absolute;
+    color: white;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+
+section>div:nth-child(2)>span{
+
+    position: absolute;
+    color: white;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+section>div:nth-child(3)>span{
+
+    position: absolute;
+    color: white;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: fit-content;
+    height: fit-content;
+    text-align: center ;
+
+}
+

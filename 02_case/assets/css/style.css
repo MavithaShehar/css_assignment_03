@@ -1,107 +1,130 @@
 
-body{
-    overflow-x: hidden;
-}
+/*headr conten css*/
 
 
-nav {
+header{
+    background: #fafa3e;
     position: relative;
-    width: 100vw;
-    height: 10vh;
-    /*background-color: pink;*/
-
-}
-
-/*logo*/
-nav > div:first-child {
-    position: absolute;
-    width: 12vw;
-    height: 8vh;
-    /*background-color: black;*/
-    top: 1vh;
-    left: 1vw;
-
-}
-
-nav > div:first-child > img {
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-/*navbar option*/
-nav > div:nth-child(2) {
-    position: absolute;
-    /*background-color: lightblue;*/
-    top: 0;
-    right: 1vw;
-
-}
-
-nav > div:nth-child(2) > ol > li {
-    display: inline-block;
-    margin-right: 1vh;
-
-
-}
-
-/*side bar*/
-section {
-    position: relative;
-    display: flex;
-
-}
-
-section > main:first-child {
-    padding-top: 4vh;
-    width: 15vw;
-    background-color: blueviolet;
-
-}
-
-section > main:first-child > ol > li {
-    display: block;
-    margin-top: 2vh;
-    color: white;
-}
-
-/*content*/
-section > main:nth-child(2) {
-    border-top: 3px solid black;
-    width: 83vw;
-    /*background-color: #1c1cd5;*/
-    padding: 1vw;
-
-
-}
-
-section > main:nth-child(2) > div {
-    width: 83vw;
-    height: 50vh;
-    /*background-color: #ee4141;*/
-    display: flex;
-
-
-}
-
-section > main:nth-child(2) > div > img {
-    max-height: 100%;
-    max-width: 100%;
-    border: 1px solid black;
-
-}
-
-body > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 100%;
-    background-color: gray;
-    height: 3vw;
+    height: 4vw;
+
 }
-body > div > h3{
-    font-size: 15px;
+
+header>img{
+    position: absolute;
+    left: 2vw;
+}
+
+header>nav{
+    background: #fa7bf3;
+    position: absolute;
+    width: fit-content;
+    right: 0;
+    top: 0;
+
+}
+
+header>nav>dl{
+    display: inline-block;
+    margin-right: 2vw;
+
+}
+
+
+/*side bar css*/
+
+main{
+    position: relative;
+
+}
+
+
+main>aside{
+    background: purple;
+    position: absolute;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+
+}
+
+main>aside>nav{
+
+    position: absolute;
+    width: fit-content;
+    left: 2vw;
+    margin-top: 3vw;
+    top: 0;
+
+}
+
+main>aside>nav>dl{
     color: white;
+    margin-top: 2vw;
+
+}
+
+
+/*conten*/
+
+main{
+    border-top: 4px solid black;
+}
+
+main>section{
+    position: relative;
+    margin: 0;
+    margin-left: 260px;
+
+
+
+}
+
+main>section>p{
+    margin: 0;
+
+}
+
+main>section>div>div{
+    position: relative;
+    background: #ff253a;
+    display: inline-block;
+    width: calc(77vw / 3);
+    height: 50vh;
+    box-sizing: border-box;
+    top: 2px;
+
+}
+
+main>section>div>div>img{
+    width: calc(77vw / 3);
+    height: 50vh;
+    border: 3px solid black;
+    margin-right: 0;
+
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background: gray;
+    height: 2vw;
+    margin: 0;
+
+}
+footer > span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
     margin: auto;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+
 }
 

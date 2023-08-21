@@ -2,92 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Case 03</title>
+  <title>Case 02</title>
   <link rel="stylesheet" href="../test/nomalize.css">
-  <link rel="stylesheet" href="../03_case/assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:ital,wght@1,300&family=Rubik:ital@1&display=swap" rel="stylesheet">
+<!--  <link rel="stylesheet" href="../03_case/assets/css/style.css">-->
+
 
   <style>
 
-    section>div:first-child{
-      height: 50px;
-      /* position: relative;*/
-      color: white;
+    /*headr conten css*/
+
+    p{
+       font-family: 'Lobster', cursive;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-family: 'Rubik', sans-serif;;
+    }
+
+    header{
+      background: #fafa3e;
+      position: relative;
+      box-sizing: border-box;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      width: 100%;
+      height: 4vw;
 
     }
-    .ch{
-      position: sticky;
-      top: 0;
-      z-index: 300;
 
-    }
-    section>div:first-child>span{
-      height: fit-content;
+    header>img{
       position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      font-weight: bold;
-      font-size: 20px;
+      left: 2vw;
     }
 
-    section>div:nth-child(2){
-      height: calc(100vh - 50px);
+    header>nav{
+      background: #fa7bf3;
+      position: absolute;
+      width: fit-content;
+      right: 0;
+      top: 0;
+
+    }
+
+    header>nav>dl{
+      display: inline-block;
+      margin-right: 2vw;
+
+    }
+
+
+    /*side bar css*/
+
+    main{
       position: relative;
 
     }
-    section>div:nth-child(2)>span{
 
 
-      width: fit-content;
-      height: fit-content;
+    main>aside{
+      background: purple;
       position: absolute;
-      left: 0;
-      right: 0;
+      width: 250px;
       top: 0;
       bottom: 0;
-      margin: auto;
-      font-size: 80px;
-    }
-
-    section:first-child>div:first-child{
-      background: red;
-    }
-    section:nth-child(2)>div:first-child{
-      background: darkblue;
-
-    }
-    section:nth-child(2)>div:nth-child(2){
-      background: lightblue;
 
     }
 
+    main>aside>nav{
+
+      position: absolute;
+      width: fit-content;
+      left: 2vw;
+      margin-top: 3vw;
+      top: 0;
+
+    }
+
+    main>aside>nav>dl{
+      color: white;
+      margin-top: 2vw;
+
+    }
 
 
-    section:nth-child(3)>div:first-child{
-      background: black;
+    /*conten*/
+
+    main{
+      border-top: 4px solid black;
+    }
+
+    main>section{
+      position: relative;
+      margin: 0;
+      margin-left: 260px;
+
 
 
     }
-    section:nth-child(3)>div:nth-child(2){
+
+    main>section>p{
+      margin: 0;
+
+    }
+
+    main>section>div>div{
+      position: relative;
+      background: #ff253a;
+      display: inline-block;
+      width: calc(77vw / 3);
+      height: 50vh;
+      box-sizing: border-box;
+      top: 2px;
+
+    }
+
+    /*main>section>div{*/
+
+    /*  position: relative;*/
+    /*  background: blue;*/
+    /*  width: 78vw;*/
+    /*  height:20vw ;*/
+    /*}*/
+
+    main>section>div>div>img{
+      width: calc(77vw / 3);
+      height: 50vh;
+      border: 3px solid black;
+      margin-right: 0;
+
+    }
+
+    footer{
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
       background: gray;
+      height: 2vw;
+      margin: 0;
+
+    }
+    footer > span {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      margin: auto;
+      height: fit-content;
+      width: fit-content;
+      color: white;
 
     }
 
-    section:nth-child(4)>div:first-child{
-      background: darkred;
-
-
-    }
-    section:nth-child(4)>div:nth-child(2){
-      background: orangered;
-
-    }
-    /*
-    section{
-        position: sticky;
-        top: 0;
-    }
-    */
 
   </style>
 
@@ -95,41 +162,105 @@
 
 <body>
 
-<section>
-  <div class="ch">
-    <span>Card 01</span>
-  </div>
-  <div>
-    <span>Hello</span>
-  </div>
-</section>
+<header>
+  <img src="ijse@1x.png" alt="ijse_img">
 
-<section>
-  <div class="ch">
-    <span>Card 02</span>
-  </div>
-  <div>
-    <span>How</span>
-  </div>
-</section>
+  <nav>
+    <dl>Home</dl>
+    <dl>Service</dl>
+    <dl>Contact</dl>
+    <dl>About Us</dl>
+  </nav>
 
-<section>
-  <div class="ch">
-    <span>Card 03</span>
-  </div>
-  <div>
-    <span>Are</span>
-  </div>
-</section>
+</header>
 
-<section>
-  <div class="ch">
-    <span>Card 04</span>
-  </div>
-  <div>
-    <span>You ?</span>
-  </div>
-</section>
+<main>
 
+  <aside>
+    <nav>
+      <dl>Home</dl>
+      <dl>Service</dl>
+      <dl>Contact</dl>
+      <dl>About Us</dl>
+    </nav>
+  </aside>
+
+  <section>
+
+    <div>
+      <div><img src="5gzw.gif" alt="Halo_img"></div>
+      <div><img src="5gzw.gif" alt="Halo_img"></div>
+      <div><img src="5gzw.gif" alt="Halo_img"></div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad commodi deserunt ducimus excepturi
+      laudantium, mollitia numquam quod sint totam vitae voluptates. Ab distinctio doloremque et ipsa modi quo reiciendis?</p>
+
+  </section>
+
+</main>
+
+<footer>
+  <span>Developed By IJSE</span>
+</footer>
+
+
+<script src="assets/fontawesome/js/all.min.js"></script>
 </body>
 </html>
